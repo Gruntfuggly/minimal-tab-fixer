@@ -1,0 +1,38 @@
+{
+  "name": "minimal-tab-fixer",
+  "displayName": "Minimal Tab Fixer",
+  "description": "Convert tabs to spaces on git modified lines",
+  "icon": "icon.png",
+  "version": "0.0.1",
+  "publisher": "Gruntfuggly",
+  "repository": "https://github.com/Gruntfuggly/minimalTabFixer",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "minimal-tab-fixer.fix",
+        "title": "Fix tabs in modified lines"
+      }
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0",
+    "mocha": "^2.3.3",
+    "eslint": "^3.6.0",
+    "@types/node": "^6.0.40",
+    "@types/mocha": "^2.2.32"
+  },
+  "dependencies": {
+    "convert-to-spaces": "^1.0.2"
+  }
+}
